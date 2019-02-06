@@ -1,0 +1,157 @@
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: inherit;
+}
+
+/* Variables */
+:root {
+    --color-white: #fff;
+    --color-light-white: #eee;
+
+    --color-tomato: #d40640;
+    --color-purple-transparent: rgba(88, 24, 69, .9);
+    --color-pink-transparent: rgba(216, 14, 91, .9);
+
+    --color-light-blue: #ff3c00;
+
+    --color-light-black: #222;
+    --color-black: #000;
+
+    --shadow: rgba(0, 0, 0, .4);
+}
+
+/* Layout */
+.app {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--color-pink-transparent), var(--color-purple-transparent)), url(https://i.pinimg.com/originals/91/b5/cd/91b5cdab51e207263169904b227503b4.jpg);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Calculator */
+.calculator {
+    height: 80vh;
+    width: 25%;
+    box-shadow: 0 2rem 4rem var(--shadow);
+    background-color: var(--color-white);
+}
+
+@media screen and (max-width: 1280px) {
+    .calculator {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .calculator {
+        width: 80%;
+    }
+}
+
+/* Screen */
+.screen {
+    height: 25vh;
+    width: 100%;
+    padding: 0 2rem;
+
+    color: var(--color-light-white);
+    background-color: var(--color-tomato);
+}
+
+.computation-screen {
+    height: 6vh;
+    font-size: 2.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result-screen {
+    height: 19vh;
+    font-size: 8rem;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Keypad */
+.keypad {
+    height: 55vh;
+    width: 100%;
+}
+
+.keypad__row {
+    height: 11vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Button */
+.btn {
+    width: 25%;
+    height: 100%;
+    font-size: 3rem;
+    font-family: inherit;
+    background-color: var(--color-white);
+    border: 1px solid transparent;
+    outline: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: all .2s;
+}
+
+.btn:hover {
+    color: var(--color-light-white);
+    background-color: var(--color-tomato);
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.btn--large {
+    width: 50%;
+    color: var(--color-light-white);
+    background-color: var(--color-tomato);
+}
+
+.btn--large:hover {
+    background-color: var(--color-light-white);
+    color: var(--color-tomato);
+}
+
+.btn--primary {
+    color: var(--color-tomato);
+}
+
+.btn--operator {
+    color: var(--color-light-blue);
+}
