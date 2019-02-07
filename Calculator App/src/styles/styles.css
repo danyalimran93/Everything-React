@@ -1,5 +1,4 @@
 /* CSS Reset */
-
 *,
 *::after,
 *::before {
@@ -26,7 +25,7 @@ body {
     --color-purple-transparent: rgba(88, 24, 69, .9);
     --color-pink-transparent: rgba(216, 14, 91, .9);
 
-    --color-light-blue: #ff3c00;
+    --color-orange: #ff3c00;
 
     --color-light-black: #222;
     --color-black: #000;
@@ -71,6 +70,8 @@ body {
     height: 25vh;
     width: 100%;
     padding: 0 2rem;
+    overflow: hidden;
+    white-space: nowrap;
 
     color: var(--color-light-white);
     background-color: var(--color-tomato);
@@ -79,8 +80,6 @@ body {
 .computation-screen {
     height: 6vh;
     font-size: 2.5rem;
-    overflow: hidden;
-    white-space: nowrap;
     
     display: flex;
     justify-content: flex-end;
@@ -91,8 +90,6 @@ body {
     height: 19vh;
     font-size: 8rem;
     font-weight: 600;
-    overflow: hidden;
-    white-space: nowrap;
 
     display: flex;
     justify-content: flex-end;
@@ -153,5 +150,5 @@ body {
 }
 
 .btn--operator {
-    color: var(--color-light-blue);
+    color: var(--color-orange);
 }
