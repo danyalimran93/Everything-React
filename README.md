@@ -7,3 +7,4 @@ Follow me on [Medium](https://medium.com/@danyal_imran) or [LinkedIn](https://ww
 List of blogs in the series ordered by their release date.
 
 1. [Everything React - All about React](https://medium.com/@danyal_imran/everything-react-all-about-react-6d7a8de4bb05)
+2. [Everything React - Calculator App!](https://medium.com/@danyal_imran/everything-react-first-app-188b33a880ca)
