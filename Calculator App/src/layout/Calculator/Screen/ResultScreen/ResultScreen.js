@@ -2,7 +2,7 @@ import React from 'react';
 
 const resultScreen = (props) => (
     <div className="result-screen">
-        {props.result}
+        {props.children}
     </div>
 );
 

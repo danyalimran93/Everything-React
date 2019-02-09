@@ -5,8 +5,8 @@ import ComputationScreen from './ComputationScreen/ComputationScreen';
 
 const screen = (props) => (
     <section className="screen">
-        <ResultScreen result={props.result} />
-        <ComputationScreen equation={props.equation} />
+        <ResultScreen>{props.result}</ResultScreen>
+        <ComputationScreen>{props.equation}</ComputationScreen>
     </section>
 );
 

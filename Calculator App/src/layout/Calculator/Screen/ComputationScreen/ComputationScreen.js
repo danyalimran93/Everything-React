@@ -2,7 +2,7 @@ import React from 'react';
 
 const computationScreen = (props) => (
     <div className="computation-screen">
-        {props.equation}
+        {props.children}
     </div>
 );
 
