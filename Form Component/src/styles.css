@@ -1,0 +1,117 @@
+.button {
+  width: 100%;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #eb3349, #f45c43);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: 1px solid transparent;
+  font-weight: bold;
+  transition: all .2s;
+}
+
+.button:hover {
+  color: transparent;
+  border: 1px solid #eb3349;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid gainsboro;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label-clipped {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f45c43;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control > .label {
+  color: gray;
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  cursor: text;
+  transition: all .2s;
+}
+
+.form-control > .icon {
+  color: gray;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: all .2s;
+}
+
+.form-control > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #f45c43;
+  transform: scale(0);
+  transition: all .2s;
+}
+
+.form-control > .input:focus + .label {
+  top: -5px;
+  left: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f45c43;
+}
+
+.form-control > .input:focus ~ .icon {
+  top: 8px;
+  transform: scale(1);
+  color: #eb3349;
+}
+
+.form-control > .input:focus ~ span {
+  transform: scale(1);
+}
+
+.app {
+  width: 300px;
+}
+
+.app > *:not(:first-child) {
+  margin-top: 5px;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
